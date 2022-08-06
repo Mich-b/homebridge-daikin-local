@@ -397,15 +397,15 @@ Daikin.prototype = {
             this.log.warn('Auto');
               query = query
                 .replace(/mode=[01234567]/, `mode=${this.defaultMode}`)
-                .replace(/stemp=--/, `stemp=${responseValues.dt7}`)
-                .replace(/dt3=--/, `dt3=${responseValues.dt7}`)
+                .replace(/stemp=--/, `stemp=${responseValues.stemp}`)
+                .replace(/dt3=--/, `dt3=${responseValues.stemp}`)
                 .replace(/shum=--/, `shum=${'0'}`);
                 break;
             case '3': // COOL
               query = query
                 .replace(/mode=[01234567]/, `mode=${this.defaultMode}`)
-                .replace(/stemp=--/, `stemp=${responseValues.dt7}`)
-                .replace(/dt3=--/, `dt3=${responseValues.dt7}`)
+                .replace(/stemp=--/, `stemp=${responseValues.stemp}`)
+                .replace(/dt3=--/, `dt3=${responseValues.stemp}`)
                 .replace(/shum=--/, `shum=${'0'}`);
                 break;
                 case '4': // HEAT
