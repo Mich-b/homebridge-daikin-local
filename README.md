@@ -17,8 +17,13 @@ Supports Daikin Air Conditioners on [HomeBridge](https://github.com/nfarina/home
 <img src="https://user-images.githubusercontent.com/2294359/80783675-b4a79380-8ba4-11ea-9fa8-f48f9bf12585.jpeg" align="center" alt="controller" width="50%" height="50%">
 
 
-
 # Installation
+cd /home/pi
+git clone https://github.com/Mich-b/homebridge-daikin-local
+npm install
+sudo npm link
+
+
 
 This plugin retrieves sensor and mode data from a [Daikin WIFI controller](https://amzn.to/2MZDQjg) in your local network and allows you to set operation modes and target temperatures. As it is a plugin for [HomeBridge](https://github.com/nfarina/homebridge) you will have access to this features using Apple Home.
 
